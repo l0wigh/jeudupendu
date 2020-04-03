@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Jeu du Pendu</title>
+	</head>
+	<body onload="marquealea()">
+		<div id="lemot"></div>
+		<div class="lettres">
+			<div class="ligne">
+				<button onclick="test('A')">A</button>
+				<button onclick="test('Z')">Z</button>
+				<button onclick="test('E')">E</button>
+				<button onclick="test('R')">R</button>
+				<button onclick="test('T')">T</button>
+				<button onclick="test('Y')">Y</button>
+				<button onclick="test('U')">U</button>
+				<button onclick="test('I')">I</button>
+				<button onclick="test('O')">O</button>
+				<button onclick="test('P')">P</button>
+			</div>
+			<div class="ligne">
+				<button onclick="test('Q')">Q</button>
+				<button onclick="test('S')">S</button>
+				<button onclick="test('D')">D</button>
+				<button onclick="test('F')">F</button>
+				<button onclick="test('G')">G</button>
+				<button onclick="test('H')">H</button>
+				<button onclick="test('J')">J</button>
+				<button onclick="test('K')">K</button>
+				<button onclick="test('L')">L</button>
+				<button onclick="test('M')">M</button>
+			</div>
+			<div class="ligne">
+				<button onclick="test('W')">W</button>
+				<button onclick="test('X')">X</button>
+				<button onclick="test('C')">C</button>
+				<button onclick="test('V')">V</button>
+				<button onclick="test('B')">B</button>
+				<button onclick="test('N')">N</button>
+				<button onclick="trouve()">J'ai trouvé</button>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
