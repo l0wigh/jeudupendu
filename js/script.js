@@ -31,8 +31,9 @@ var marque;
 var erreurs = 0;
 
 function marquealea(){
+	document.getElementById("lettresutilisees").innerHTML == ""
 	erreurs = 0;
-	aleatoire = Math.floor((Math.random() * 9) + 1);
+	aleatoire = Math.floor((Math.random() * Object.keys(liste).length) + 1);
 	marque = liste[aleatoire];
 	marqueListe1 = Array.from(marque);
 	marqueunder = "_".repeat(marque.length);
@@ -43,6 +44,12 @@ function marquealea(){
 }
 
 function test(lettre){
+	if (document.getElementById("lettresutilisees").innerHTML == ""){
+		document.getElementById("lettresutilisees").innerHTML = "Déjà utilisées : " + lettre;
+	}
+	else{
+		document.getElementById("lettresutilisees").innerHTML += " " + lettre;
+	}
 	marqueListe3 = marqueListe1.slice();
 	for(i = 0; i < marque.length; i++){
 		index = marqueListe1.indexOf(lettre);
